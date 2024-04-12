@@ -3,7 +3,7 @@ insira_valor = int(input("Valor: "))
 try:
     while(True):
 
-        formas_pagamento = input("Selecione a forma de pagamento: \n ")
+        formas_pagamento = input("Selecione a forma de pagamento: \n Debito\n Credito")
 
         if formas_pagamento == "Debito":
 
@@ -34,8 +34,9 @@ try:
                     print(f"2° Parcela {insira_valor/2}")
                     break
                 elif parcelas == 3:
-                    print(f"1° Parcela {insira_valor}/3")
-                    print(f"2° Parcela {insira_valor}/3")
-                    print(f"3° Parcela {insira_valor}/3")
+                    print(f"1° Parcela {int(insira_valor/3)}")
+                    print(f"2° Parcela {int(insira_valor/3)}")
+                    print(f"3° Parcela {int(insira_valor/3)}")
+                    break
 except:
     print("Não foi possivel efetuar a solicitação")
